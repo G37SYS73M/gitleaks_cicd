@@ -79,6 +79,5 @@ git log -L 241,241:solutions/solutions.md f2734497fa028573f14311ee884c1a8955e866
 After running the detect command with the ```--baseline-path parameter```, report output (findings.json) will only contain new issues.
 
 ### Cons
-- **False Positives**: Like any automated scanning tool, GitLeaks may produce false positives, flagging code snippets that resemble sensitive information but are actually harmless.
-- **Limited Coverage**: While GitLeaks is effective at detecting certain types of sensitive information, it may not catch all potential leaks or vulnerabilities in a codebase. It's important to complement its usage with other security measures.
+- **Limited Coverage**: While GitLeaks is effective at detecting certain types of sensitive information, it may not catch all potential leaks or vulnerabilities in a codebase.
 - **Dependency on Regular Expressions**: GitLeaks primarily relies on regular expressions to identify patterns of sensitive information. While this approach is effective in many cases, it may not be foolproof and can miss complex or obfuscated patterns.
